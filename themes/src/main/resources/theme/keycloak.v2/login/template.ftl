@@ -48,7 +48,7 @@
             checkCookiesAndSetTimer(
               "${authenticationSession.authSessionId}",
               "${authenticationSession.tabId}",
-              "${url.ssoLoginInOtherTabsUrl}"
+              "${url.ssoLoginInOtherTabsUrl}    "
             );
         </script>
     </#if>
@@ -57,7 +57,9 @@
 <body id="keycloak-bg" class="${properties.kcBodyClass!}">
 <div id="kc-header" class="${properties.kcHeaderClass!}">
     <div id="kc-header-wrapper"
-             class="${properties.kcHeaderWrapperClass!}">${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}</div>
+             class="${properties.kcHeaderWrapperClass!}">
+                МИНПРОСВЕЩЕНИЯ РФ
+             </div>
     </div>
 </div>
 <div class="pf-v5-c-login"
